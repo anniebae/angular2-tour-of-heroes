@@ -1,11 +1,8 @@
 import {Component} from '@angular/core';
+
 import { Hero } from './hero';
 import { HeroDetailComponent } from './hero-detail.component';
 
-export class Hero {
-  id: number;
-  name: string;
-}
 
 @Component ({
   selector: 'my-app';
@@ -70,7 +67,8 @@ export class Hero {
       margin-right: .8em;
       border-radius: 4px 0 0 4px;
     }
-  `]
+  `],
+  directives: [HeroDetailComponent]
 
 })
 
